@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zooApp - Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+    <div class="desktop" id="desktop"></div>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="main-header">
+                <div class="header__logo">
+                    <img src="img/logo.svg" alt="Logo" class="logo">
+                </div>
+                <ul class="header-navigation__items">
+                    <div class="hamburger__menu">
+                        <div class="hamburger-menu">
+                                <input id="menu__toggle" type="checkbox" />
+                                <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                                </label>
+                            <ul class="menu__box">
+                              <li><a class="menu__item" href="../index.html">About</a></li>
+                                    <li><a class="menu__item" href="../zoos/index.html">Zoos</a></li>
+                                    <li><a class="menu__item" href="index.html">Map</a></li>
+                                    <li><a class="menu__item" href="#">Contact Us</a></li>
+                                    <li><a class="menu__item" href="#">Design</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <li class="header-navigation__item"><a href="../index.html" class="header-navigation__link">About</a></li>
+                    <li class="header-navigation__item"><a href="../zoos/index.html" class="header-navigation__link">Zoos</a></li>
+                    <li class="header-navigation__item"><a href="index.html" class="header-navigation__link active">Map</a></li>
+                    <li class="header-navigation__item"><a href="#" class="header-navigation__link">Contact Us</a></li>
+                    <li class="header-navigation__item" id="last-blog"><a href="#" class="header-navigation__link">Design</a></li>
+                </ul>
+                <div class="header__switch">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox__label"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-main">
+        <div class="container">
+            <div class="main-section__title title">Choose your favorite</div>
+            <div class="main-section__subtitle subtitle">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</div>
+            <div class="main-slider__blog">
+                <img src="img/arrow-left.svg" alt="" class="arrow">
+                <img src="img/gorilla.png" alt="Gorilla" id="mobile__width">
+                <img src="img/panda__active.png" alt="Panda" class="main-slider__active active__animal">
+                <img src="img/crocodile.png" alt="Cracodile" class="main-slider__animal">
+                <img src="img/eagle.png" alt="Eagle" class="main-slider__animal display-none" id="mobile__width">
+                <img src="img/tiger.png" alt="Tiger" class="main-slider__animal display-none">
+                <img src="img/antilope.png" alt="Antilope" class="main-slider__animal media-none">
+                <img src="img/lion.png" alt="Lion" class="main-slider__animal media-none">
+                <img src="img/zebra.png" alt="Zebra" class="main-slider__animal media-none">
+                <img src="img/arrow-right.svg" alt="" class="arrow">
+            </div>
+            <div class="main-slider__number-blog">
+                <div class="main-slider__number-title">02/<span>08</span></div>
+                <div class="main-slider__low"></div>
+                <div class="main-slider__ice-rink"></div>
+            </div>
+            <div class="map">
+                <img src="img/amCharts.pixelMap (7) 1.png" alt="Map" class="map__icon">
+            </div>
+            <div class="last-btn">
+                <a href="../zoos/index.html" class="btn"><img src="img/watch.svg" alt=""> watch online</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="first-footer">
+                <div class="footer-logo">
+                    <img src="img/dark-logo.svg" alt="Logo">
+                </div>
+                <ul class="footer-navigation__items">
+                    <li class="footer-navigation__item"><a href="../index.html" class="footer-navigation__link">About</a></li>
+                    <li class="footer-navigation__item"><a href="../zoos/index.html" class="footer-navigation__link">Zoos</a></li>
+                    <li class="footer-navigation__item"><a href="index.html" class="footer-navigation__link">Map</a></li>
+                    <li class="footer-navigation__item" id="last-blog"><a href="#" class="footer-navigation__link">Design</a></li>
+                </ul>
+                <div class="footer-btn">
+                    <a href="#popup" class="button">donate for volunteers</a>
+                </div>
+                <ul class="footer-navigation__items-media">
+                    <li class="footer-navigation__item"><a href="../index.html" class="footer-navigation__link">About</a></li>
+                    <li class="footer-navigation__item"><a href="../zoos/index.html" class="footer-navigation__link">Zoos</a></li>
+                    <li class="footer-navigation__item"><a href="index.html" class="footer-navigation__link">Map</a></li>
+                    <li class="footer-navigation__item" id="last-blog"><a href="#" class="footer-navigation__link">Design</a></li>
+                </ul>
+            </div>
+            <div class="second-footer">
+                <div class="footer-register">
+                    <div class="footer-register__title">Contact us</div>
+                    <input type="name" class="name footer-input" placeholder="Name">
+                    <input type="email" class="email footer-input" placeholder="Email">
+                    <textarea name="message" id="footer-message" cols="30" rows="8" placeholder="Please enter your message"></textarea>
+                    <div class="checkbox-blog">
+                        <label for="checkbox">
+                            <input type="checkbox" id="checkbox" class="chexkbox">
+                            I agree to the processing of Personal Data
+                        </label>
+                    </div>
+                    <div class="send"><span>send</span> <img src="img/white-arrow.svg" alt=""></div>
+                </div>
+                <div class="second-footer__info">
+                    <div class="second-footer__info-title">ZOO Online Centre</div>
+                    <div class="title-blog">
+                        <div class="second-footer__info-subtitle">132, Address District, Street</div>
+                        <div class="second-footer__info-subtitle">Open Daily 10:00 am - 5:00 pm</div>
+                    </div>
+                    <div class="title-blog">
+                        <div class="second-footer__info-subtitle">T(702) 163-3433</div>
+                        <div class="second-footer__info-subtitle">zoo.online@gmail.com</div>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="https://instagram.com/dev.elnur" class="link"><img src="img/instagram.svg" alt=""></a>
+                        <a href="#" class="link"><img src="img/twitter.svg" alt=""></a>
+                        <a href="#" class="link"><img src="img/vk.svg" alt=""></a>
+                        <a href="#" class="link"><img src="img/you-tube.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-btn-media">
+                    <a href="#popup" class="button">donate for volunteers</a>
+                </div> 
+            </div>
+            <div class="last-footer">
+                <div class="last-footer__title">&copy;Noora Sagnayeva</div>
+                <div class="last-footer__title">&copy;RSSchool and &copy;Yem Digital - 2021</div>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup">
+        <a href="#desktop" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <img src="img/Rectangle 43.png" alt="" class="popup__img">
+                <div class="popup__info">
+                    <div class="popup__title">Donate for your animal </div>
+                        <div class="popup__flex" id="display-block">
+                            <div class="popup__blog" id="block">
+                                <div class="popup__blog-input" id="first-input">
+                                    <label for="text" class="label">Сhoose an animal</label>
+                                    <input type="text" class="popup__input" id="first-input">
+                                </div>
+                                <div class="popup__blog-input">
+                                    <label for="text" class="label">To donate</label>
+                                    <input type="text" class="popup__input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup__flex">
+                            <div class="popup__blog first__input-blog" id="display-block">
+                                <div class="popup__blog-title">About you</div>
+                                <div class="popup__blog-input">
+                                    <label for="name" class="label">Name</label>
+                                    <input type="name" class="popup__input">
+                                </div>
+                                <div class="popup__blog-input first__input-blog">
+                                    <label for="email" class="label">Email</label>
+                                    <input type="email" class="popup__input">
+                                </div>
+                                <div class="popup__blog-input first__input-blog">
+                                    <label for="tel" class="label">Phone</label>
+                                    <input type="tel" class="popup__input">
+                                </div>
+                            </div>
+                            <div class="popup__blog" id="display-block">
+                                <div class="popup__blog-title darkblack">Checkout</div>
+                                <div class="popup__blog-input">
+                                    <label for="text" class="label">Card number</label>
+                                    <input type="text" class="popup__input">
+                                </div>
+                                <div class="popup__blog-input">
+                                    <label for="date" class="label">Expiry date</label>
+                                    <input type="date" class="popup__input">
+                                </div>
+                                
+                                <div class="popup__blog-input">
+                                    <label for="text" class="label">CVC</label>
+                                    <input type="text" class="popup__input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup__paragraph">If don't cancel your subscription before the trial ends on April 15, 2021, you agree that you will automatically be charged</div>
+                        <div class="popup__btn">
+                            <a href="#desktop" class="btn">donate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
